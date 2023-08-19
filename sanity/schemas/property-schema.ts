@@ -53,6 +53,21 @@ const property = {
       ],
     },
     {
+      name: "type",
+      title: "Apartment type",
+      type: "string",
+      options: {
+        list: [
+          { title: "Attic", value: "attic" },
+          { title: "Base floor", value: "base-floor" },
+          { title: "Duplex", value: "duplex" },
+          { title: "Garden apartment", value: "garden-apartment" },
+          { title: "Studio", value: "studio" },
+          { title: "Penthouse", value: "penthouse" },
+        ],
+      },
+    },
+    {
       name: "floor",
       title: "Floor",
       description: "Floor of the property",
@@ -90,6 +105,26 @@ const property = {
       type: "number",
     },
     {
+      name: "propertyDescription",
+      title: "Property description",
+      type: "string",
+    },
+    {
+      name: "locationDescription",
+      title: "Location description",
+      type: "string",
+    },
+    {
+      name: "furnishingDescription",
+      title: "Furnishing description",
+      type: "string",
+    },
+    {
+      name: "otherDescription",
+      title: "Other description",
+      type: "string",
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -122,6 +157,57 @@ const property = {
       name: "groundPlan",
       title: "Ground plan",
       type: "image",
+    },
+    {
+      name: "cellarSize",
+      title: "Cellar size",
+      type: "number",
+    },
+    {
+      name: "gardenSize",
+      title: "Garden size",
+      type: "number",
+    },
+    {
+      name: "parking",
+      title: "Parking",
+      description: "Number of parking spots",
+      type: "number",
+    },
+    {
+      name: "depositAmount",
+      title: "Deposit amount",
+      description:
+        "Amount of money for deposit (e.g. 3 monthly rents in Euro).",
+      type: "number",
+    },
+    {
+      name: "heatingCosts",
+      title: "Heating costs",
+      description: "Average costs of heating per month.",
+      type: "number",
+    },
+    {
+      name: "internetCosts",
+      title: "Internet costs",
+      description: "Costs of internet per month.",
+      type: "number",
+    },
+    {
+      name: "otherCosts",
+      title: "Other costs",
+      description: "Describe other costs.",
+      type: "string",
+    },
+    {
+      name: "availableFrom",
+      title: "Available from",
+      type: "date",
+    },
+    {
+      name: "availableUntil",
+      title: "Available until",
+      type: "date",
     },
   ],
 };
