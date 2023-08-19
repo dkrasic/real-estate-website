@@ -16,11 +16,25 @@ export async function getProperties(): Promise<Property[]> {
       numberOfBathrooms,
       numberOfBalconies,
       totalBalconySize,
+      propertyDescription,
+      locationDescription,
+      furnishingDescription,
+      otherDescription,
       floor,
+      type,
+      cellarSize,
+      gardenSize,
+      parking,
+      availableFrom,
+      availableUntil,
+      depositAmount,
+      heatingCosts,
+      internetCosts,
+      otherCosts,
       numberOfFloors,
       "slug": slug.current,
       "images": images[].asset->url,
-      groundPlan
+      "groundPlan": groundPlan.asset->url
     }[]`
   );
 
@@ -43,11 +57,25 @@ export async function getProperty(slug: string): Promise<Property> {
       numberOfBathrooms,
       numberOfBalconies,
       totalBalconySize,
+      propertyDescription,
+      locationDescription,
+      furnishingDescription,
+      otherDescription,
       floor,
+      type,
+      cellarSize,
+      gardenSize,
+      parking,
+      availableFrom,
+      availableUntil,
+      depositAmount,
+      heatingCosts,
+      internetCosts,
+      otherCosts,
       numberOfFloors,
       "slug": slug.current,
       "images": images[].asset->url,
-      groundPlan
+      "groundPlan": groundPlan.asset->url
     }`,
     { slug }
   );

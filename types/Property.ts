@@ -20,8 +20,8 @@ export type Property = {
   locationDescription: string;
   furnishingDescription: string;
   otherDescription: string;
-  images: string[]; // should be array of image URLs
-  groundPlan: string; // should be only image URL
+  images: string[];
+  groundPlan: string;
   cellarSize: number;
   gardenSize: number;
   parking: number;
@@ -29,10 +29,8 @@ export type Property = {
   availabeUntil: Date | undefined;
   depositAmount: number;
   heatingCosts: number;
-  internetSpeed: string;
-  internetCosts: string;
+  internetCosts: number;
   otherCosts: string;
-  energyCertificate: string;
 };
 
 export type PropertyType =
