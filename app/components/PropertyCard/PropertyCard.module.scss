@@ -1,0 +1,16 @@
+.cardWrapper {
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  width: fit-content;
+  min-width: 200px;
+
+  .imageWrapper {
+    position: relative;
+    height: 200px;
+  }
+
+  .descWrapper {
+    padding: 10px;
+  }
+}
