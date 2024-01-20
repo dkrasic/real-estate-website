@@ -84,3 +84,15 @@ export async function getProperty(slug: string): Promise<Property> {
 
   return property;
 }
+
+export async function getAboutUsSectionContent() {
+  const aboutUsSectionContent = await createClient(config).fetch(
+    groq`*[_type == "sectionsContent"]{
+      aboutUsSectionContent,
+    }`
+  );
+
+  console.log("aboutUsSectionContent: ", aboutUsSectionContent);
+
+  return aboutUsSectionContent;
+}

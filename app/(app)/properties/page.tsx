@@ -1,5 +1,5 @@
 import { getProperties } from "@/sanity/sanity-utils";
-import { PropertyCard } from "../../components/PropertyCard/PropertyCard";
+import { PropertyCard } from "../../components/PropertyCard";
 import styles from "./styles.module.scss";
 
 export default async function Properties() {
